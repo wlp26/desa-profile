@@ -5,7 +5,7 @@ import DemografiPage from "./pages/DemografiPage";
 
 function App() {
   return (
-    <Router basename="desa-profile">
+    <Router basename="/desa-profile">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/infografis" element={<DemografiPage />} />
