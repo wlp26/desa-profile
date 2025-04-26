@@ -1,0 +1,60 @@
+.demografi-section {
+  background-color: #f8f8f8;
+  padding-top: 10rem;
+  padding-bottom: 3rem;
+}
+
+.demografi-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  padding: 0 1rem;
+  margin: 0 auto;
+}
+
+.demografi-text {
+  text-align: start;
+}
+
+.demografi-title {
+  color: #2a6f82;
+  font-weight: 800;
+  font-size: 2.8rem;
+  text-align: start;
+  padding-bottom: 20px;
+}
+
+.demografi-desc {
+  font-size: 1.1rem;
+  color: #555;
+  line-height: 1.7;
+  max-width: 500px;
+}
+
+.demografi-image {
+  flex: 1 1 400px;
+  text-align: end;
+}
+
+.demografi-image img {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+}
+
+@media (max-width: 767px) {
+  .demografi-title {
+    font-size: 1.8rem;
+    color: #2a6f82;
+    text-align: start;
+  }
+
+  .demografi-desc {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.7;
+    max-width: 500px;
+  }
+}

@@ -1,0 +1,41 @@
+.perkawinan-section {
+  background-color: #f9f9f9;
+}
+
+.perkawinan-grid {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.perkawinan-card {
+  background: white;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+  padding: 2rem;
+  width: 242px;
+  text-align: center;
+  transition: transform 0.3s ease;
+}
+
+.perkawinan-card:hover {
+  transform: translateY(-5px);
+}
+
+.perkawinan-icon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.perkawinan-value {
+  font-size: 1.6rem;
+  font-weight: 700;
+  margin: 0.5rem 0;
+  color: #333;
+}
+
+.perkawinan-label {
+  font-size: 1.1rem;
+  color: #555;
+}

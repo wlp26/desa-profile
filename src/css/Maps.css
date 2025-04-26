@@ -1,0 +1,85 @@
+.peta-section {
+  background: #f8f8f8;
+  padding: 5rem 1rem;
+}
+
+.peta-title {
+  color: #2a6f82;
+  font-weight: 800;
+  font-size: 2.8rem;
+  text-align: left;
+  padding-bottom: 20px;
+}
+
+.peta-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+.peta-info-card {
+  background: white;
+  padding: 1rem;
+  border-radius: 16px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.05);
+  flex: 1 1 450px;
+  max-width: 500px;
+}
+
+.peta-info h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1.2rem;
+  font-weight: 700;
+}
+
+.peta-batas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.peta-batas-grid strong {
+  display: block;
+  font-weight: 700;
+  color: #111;
+}
+
+.peta-info-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1.05rem;
+  font-weight: 600;
+  color: #222;
+}
+
+.peta-info-item span {
+  font-weight: 500;
+}
+
+.peta-map {
+  flex: 1 1 500px;
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+  height: 443px;
+}
+
+.peta-map iframe {
+  width: 100%;
+  height: 100%;
+  border: none;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .peta-grid {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .peta-title {
+    text-align: center;
+  }
+}

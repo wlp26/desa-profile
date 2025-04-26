@@ -1,0 +1,27 @@
+.chart-title {
+  color: #2a6f82;
+  font-weight: 800;
+  font-size: 2.8rem;
+  text-align: center;
+  padding-bottom: 20px;
+}
+
+.chart-wrapper {
+  overflow-x: auto;
+  display: flex;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .chart-wrapper {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 767px) {
+  .chart-title {
+    font-size: 1.8rem;
+    color: #2a6f82;
+    text-align: center;
+  }
+}

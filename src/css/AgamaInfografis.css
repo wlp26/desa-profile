@@ -1,0 +1,56 @@
+.agama-section {
+  background-color: #f8f8f8;
+}
+
+.agama-list {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* ✅ 3 kolom */
+  gap: 1.5rem;
+  margin: 0 auto;
+}
+
+.agama-item {
+  display: flex;
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  align-items: center;
+  min-height: 100px;
+}
+.agama-item:last-child {
+  grid-column: 2 / 3;
+}
+
+.agama-color-bar {
+  width: 6px;
+  height: 100%;
+}
+
+.agama-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  flex: 1;
+}
+
+.agama-text p {
+  margin: 0.3rem 0 0;
+  font-size: 1rem;
+  color: #666;
+}
+
+.agama-icon {
+  font-size: 2rem;
+}
+
+/* Responsif mobile */
+@media (max-width: 768px) {
+  .agama-list {
+    grid-template-columns: 1fr; /* ✅ 1 kolom di mobile */
+  }
+  .agama-item:last-child {
+    grid-column: auto; /* reset supaya mobile normal */
+  }
+}

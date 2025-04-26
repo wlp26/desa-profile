@@ -1,0 +1,82 @@
+.darah-section {
+  background: #fafafa;
+}
+
+.darah-title {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
+}
+
+.donut-flex-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.donut-wrapper,
+.donut-keterangan {
+  flex: 1 1 450px;
+  max-width: 500px;
+}
+.donut-wrapper {
+  position: relative;
+}
+
+.donut-center {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  pointer-events: none;
+  color: #333;
+}
+
+.donut-center span {
+  font-size: 1rem;
+  color: #666;
+}
+
+.donut-center strong {
+  font-size: 2.2rem;
+  display: block;
+}
+
+.donut-keterangan {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.donut-keterangan h4 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+.darah-grid {
+  display: grid;
+  grid-template-columns: repeat(2, max-content);
+  column-gap: 2rem;
+  row-gap: 0.4rem;
+}
+
+.darah-item {
+  font-size: 0.95rem;
+  line-height: 1.2;
+}
+
+@media (max-width: 600px) {
+  .darah-grid {
+    display: grid;
+    grid-template-columns: repeat(2, max-content); /* ✅ tetap 2 kolom */
+    column-gap: 2rem;
+    row-gap: 0.4rem;
+    justify-content: center; /* ✅ center isi grid-nya */
+  }
+}

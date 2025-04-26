@@ -1,0 +1,15 @@
+.pertumbuhan-section {
+  background-color: #f9f9f9;
+}
+
+.chart-wrapper {
+  overflow-x: auto;
+  display: flex;
+  padding: 0 1rem;
+}
+
+@media (min-width: 768px) {
+  .chart-wrapper {
+    justify-content: center;
+  }
+}
