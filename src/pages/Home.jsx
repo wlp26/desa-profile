@@ -11,8 +11,8 @@ const Home = () => {
       <Navbar />
       <Hero />
       <InfografisPertama />
-      <Maps />
       <GalleryCarousel />
+      <Maps />
     </>
   );
 };

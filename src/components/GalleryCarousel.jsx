@@ -35,10 +35,10 @@ const dataImages = [
 
 const GalleryCarousel = () => {
   return (
-    <section className="gallery-section py-5">
+    <section id="gallery-section" className="gallery-section">
       <div className="custom-container text-center">
-        <h2 className="gallery-title">Galeri Desa</h2>
-        <p className="gallery-subtitle mb-4">
+        <h2 className="chart-title">Galeri Desa</h2>
+        <p className="gallery-subtitle">
           Potret keindahan alam dan aktivitas desa kami.
         </p>
 

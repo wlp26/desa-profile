@@ -3,9 +3,9 @@ import "../css/Maps.css";
 
 const Maps = () => {
   return (
-    <section className="peta-section py-5">
+    <section id="maps-section" className="peta-section py-5">
       <div className="container">
-        <h2 className="peta-title">Peta Lokasi Desa</h2>
+        <h2 className="chart-title">Peta Lokasi Desa</h2>
         <div className="peta-grid">
           {/* Kiri - Info Card */}
           <div className="peta-info-card">

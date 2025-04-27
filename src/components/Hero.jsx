@@ -2,6 +2,23 @@ import React from "react";
 import "../css/Hero.css";
 import background from "../assets/background-web.mp4";
 
+const scrollToMaps = () => {
+  const isMobile = window.innerWidth <= 768;
+  const offset = isMobile ? 50 : 100;
+  const mapsSection = document.getElementById("maps-section");
+  window.scrollTo({ behavior: "smooth", top: mapsSection.offsetTop - offset });
+};
+
+const scrollToGallery = () => {
+  const isMobile = window.innerWidth <= 768;
+  const offset = isMobile ? 50 : 100;
+  const gallerySection = document.getElementById("gallery-section");
+  window.scrollTo({
+    behavior: "smooth",
+    top: gallerySection.offsetTop - offset,
+  });
+};
+
 const Hero = () => {
   return (
     <div className="hero-container">
@@ -19,10 +36,15 @@ const Hero = () => {
           Temukan keindahan pantai dan budaya desa yang unik di sini.
         </p>
         <div className="mt-4">
-          <button className="btn btn-outline-light me-3 px-4 py-2">
+          <button
+            className="btn btn-outline-light me-3 px-4 py-2"
+            onClick={scrollToMaps}
+          >
             Kunjungi
           </button>
-          <button className="btn btn-light px-4 py-2">Jelajahi</button>
+          <button className="btn btn-light px-4 py-2" onClick={scrollToGallery}>
+            Gallery
+          </button>
         </div>
       </div>
     </div>
