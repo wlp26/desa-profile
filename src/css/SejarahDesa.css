@@ -1,0 +1,53 @@
+.sejarah-desa {
+  padding: 60px 0;
+  color: #333;
+  text-align: center;
+  position: relative;
+  background-color: #f1f5f9;
+}
+
+.sejarah-container {
+  max-width: 1075px !important;
+  background-size: cover;
+  background-position: center;
+  border-radius: 10px;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.sejarah-content {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  background-color: rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+}
+
+.section-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 30px;
+  text-transform: uppercase;
+}
+
+.sejarah-text {
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+  margin-bottom: 20px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .sejarah-text {
+    font-size: 1rem;
+  }
+}

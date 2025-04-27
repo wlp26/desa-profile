@@ -12,12 +12,6 @@
   padding: 0 1rem;
 }
 
-@media (min-width: 768px) {
-  .chart-wrapper {
-    justify-content: center;
-  }
-}
-
 @media (max-width: 767px) {
   .chart-title {
     font-size: 1.8rem;

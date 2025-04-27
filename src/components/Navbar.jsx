@@ -54,7 +54,7 @@ const Navbar = () => {
               Beranda
             </NavLink>
           </li>
-          {/* <li className="nav-item">
+          <li className="nav-item">
             <NavLink
               to="/profil"
               className={({ isActive }) =>
@@ -63,7 +63,7 @@ const Navbar = () => {
             >
               Profil Desa
             </NavLink>
-          </li> */}
+          </li>
           <li className="nav-item">
             <NavLink
               to="/infografis"
