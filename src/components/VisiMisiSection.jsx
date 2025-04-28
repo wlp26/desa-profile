@@ -10,9 +10,9 @@ const VisiMisiSection = () => {
         <Row className="justify-content-center">
           <Col xs={12} md={5} className="mb-4">
             <Card className="border-light rounded-lg">
-              <Card.Body className="p-4 text-center">
+              <Card.Body className=" text-center">
                 <div className="d-flex justify-content-center align-items-center mb-4">
-                  <FaEye size={40} className="icon-spacing text-primary" />{" "}
+                  <FaEye size={40} className="icon-spacing text-primary" />
                   <h4 className="card-title text-primary">Visi</h4>
                 </div>
                 <p className="card-text">
@@ -27,12 +27,12 @@ const VisiMisiSection = () => {
 
           <Col xs={12} md={5} className="mb-4">
             <Card className="border-light rounded-lg">
-              <Card.Body className="p-4 text-center">
+              <Card.Body className=" text-center">
                 <div className="d-flex justify-content-center align-items-center mb-4">
                   <FaFlagCheckered
                     size={40}
                     className="icon-spacing text-success"
-                  />{" "}
+                  />
                   <h4 className="card-title text-success">Misi</h4>
                 </div>
                 <p className="card-text">
