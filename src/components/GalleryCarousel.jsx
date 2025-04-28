@@ -5,12 +5,19 @@ import "swiper/css";
 import "swiper/css/effect-coverflow";
 import "../css/GalleryCarousel.css";
 
-import tateli1 from "../assets/tateli1.jpeg";
-import tateli2 from "../assets/tateli2.jpeg";
-import tateli3 from "../assets/tateli3.jpeg";
+import tateli1 from "../assets/tateli1.jpg";
+import tateli2 from "../assets/tateli2.jpg";
+import tateli3 from "../assets/tateli3.jpg";
 import tateli4 from "../assets/tateli4.jpg";
 import tateli5 from "../assets/tateli5.jpg";
-import tateli6 from "../assets/tateli5.jpg";
+import tateli6 from "../assets/tateli6.jpg";
+import tateli7 from "../assets/tateli7.jpg";
+import tateli8 from "../assets/tateli8.jpg";
+import tateli9 from "../assets/tateli9.jpg";
+import tateli10 from "../assets/tateli10.jpg";
+import tateli11 from "../assets/tateli11.jpg";
+import tateli12 from "../assets/tateli12.jpg";
+import tateli13 from "../assets/tateli13.jpg";
 
 const dataImages = [
   {
@@ -30,6 +37,27 @@ const dataImages = [
   },
   {
     src: tateli6,
+  },
+  {
+    src: tateli7,
+  },
+  {
+    src: tateli8,
+  },
+  {
+    src: tateli9,
+  },
+  {
+    src: tateli10,
+  },
+  {
+    src: tateli11,
+  },
+  {
+    src: tateli12,
+  },
+  {
+    src: tateli13,
   },
 ];
 
