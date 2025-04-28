@@ -1,4 +1,5 @@
 import React from "react";
+import { useTypewriter, Cursor } from "react-simple-typewriter"; // Import Typewriter effect
 import "../css/Hero.css";
 import background from "../assets/background-web.mp4";
 
@@ -20,6 +21,15 @@ const scrollToGallery = () => {
 };
 
 const Hero = () => {
+  // Inisialisasi efek typewriter
+  const [text] = useTypewriter({
+    words: ["Selamat Datang di Desa Tateli Weru", "Silahkan Melihat-lihat"], // Teks untuk typewriter
+    loop: 0, // Loop 0 untuk hanya sekali
+    typeSpeed: 150, // Kecepatan ketikan
+    deleteSpeed: 50, // Kecepatan penghapusan
+    delaySpeed: 1000, // Delay antar kata
+  });
+
   return (
     <div className="hero-container">
       <video className="bg-video" autoPlay loop muted>
@@ -28,9 +38,9 @@ const Hero = () => {
       <div className="overlay"></div>
       <div className="hero-content text-white text-center">
         <h1 className="display-4 fw-bold">
-          Selamat Datang di
-          <br />
-          Profile Desa Kami
+          {/* Menggunakan teks dengan efek typewriter */}
+          <span>{text}</span>
+          <Cursor cursorColor="white" /> {/* Penunjuk kursor */}
         </h1>
         <p className="lead">
           Temukan keindahan pantai dan budaya desa yang unik di sini.
