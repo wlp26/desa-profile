@@ -9,6 +9,7 @@ import PertumbuhanPenduduk from "../components/PertumbuhanPenduduk";
 import PendidikanInfografis from "../components/PendidikanInfografis";
 import GolonganDarahInfografis from "../components/GolonganDarahInfografis";
 import PekerjaanCardSection from "../components/PekerjaanCardSection";
+import Footer from "../components/footer";
 
 const DemografiPage = () => {
   useEffect(() => {
@@ -27,6 +28,7 @@ const DemografiPage = () => {
       <AgamaInfografis />
       <PekerjaanCardSection />
       <GolonganDarahInfografis />
+      <Footer />
     </>
   );
 };

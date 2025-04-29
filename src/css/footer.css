@@ -1,0 +1,68 @@
+.footer-section {
+  background-color: #2a6f82; /* Warna latar belakang merah */
+  color: white;
+  padding: 3rem 0;
+}
+
+.footer-content {
+  margin-bottom: 2rem;
+  justify-content: center;
+}
+
+.footer-column h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-column p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.footer-icons {
+  display: flex;
+  gap: 15px;
+  margin-top: 1rem;
+}
+
+.footer-icons svg {
+  color: white;
+  cursor: pointer;
+}
+
+.footer-links h5 {
+  font-size: 1.4rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+.footer-links ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.footer-links li {
+  margin-bottom: 0.5rem;
+}
+
+.footer-links a {
+  color: white;
+  text-decoration: none;
+  font-size: 1rem;
+}
+
+.footer-links a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom {
+  background-color: #255b6b; /* Warna latar belakang lebih gelap untuk footer bawah */
+  padding: 1rem;
+}
+
+.footer-bottom-content p {
+  margin: 0;
+  font-size: 0.9rem;
+  text-align: center;
+}

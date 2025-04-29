@@ -4,6 +4,7 @@ import Navbar from "../components/Navbar";
 import VisiMisiSection from "../components/VisiMisiSection";
 import SejarahDesa from "../components/SejarahDesa";
 import SejarahPanjangDesa from "../components/SejarahPanjangDesa";
+import Footer from "../components/footer";
 
 const DesaProfile = () => {
   useEffect(() => {
@@ -15,6 +16,7 @@ const DesaProfile = () => {
       <VisiMisiSection />
       <SejarahDesa />
       <SejarahPanjangDesa />
+      <Footer />
     </>
   );
 };

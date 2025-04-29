@@ -5,6 +5,7 @@ import InfografisPertama from "../components/InfografisPertama";
 import Maps from "../components/Maps";
 import GalleryCarousel from "../components/GalleryCarousel";
 import JelajahiDesaSection from "../components/JelajahiDesa";
+import Footer from "../components/footer";
 
 const Home = () => {
   useEffect(() => {
@@ -18,6 +19,7 @@ const Home = () => {
       <InfografisPertama />
       <GalleryCarousel />
       <Maps />
+      <Footer />
     </>
   );
 };
