@@ -21,7 +21,6 @@ const scrollToMaps = () => {
 // };
 
 const Hero = () => {
-  // Inisialisasi efek typewriter
   const [text] = useTypewriter({
     words: ["Selamat Datang di Desa Tateli Weru", "Silahkan Melihat-lihat"], // Teks untuk typewriter
     loop: 0, // Loop 0 untuk hanya sekali
