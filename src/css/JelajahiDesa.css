@@ -1,0 +1,102 @@
+.jelajahi-desa-section {
+  background-color: #f9f9f9;
+  padding-top: 5rem;
+  padding-bottom: 5rem;
+}
+
+.jelajahi-desa-section .row {
+  display: flex;
+  align-items: center;
+}
+
+.jelajahi-title {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #2a6f82;
+}
+
+.section-description {
+  font-size: 1.1rem;
+  color: #6c757d;
+  margin-top: 1rem;
+  text-align: left;
+}
+
+.jelajahi-card {
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 150px !important;
+  margin: 0 auto;
+}
+.card-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* Center content vertically */
+  align-items: center; /* Center content horizontally */
+  text-align: center; /* Ensures text inside the card is centered */
+}
+
+.jelajahi-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15);
+}
+
+.card-icon {
+  color: #2a6f82;
+  margin-bottom: 10px;
+}
+
+.jelajahi-card h5 {
+  font-size: 1.2rem;
+  color: #333;
+  text-align: center;
+}
+
+.text-section {
+  text-align: left;
+}
+
+@media (max-width: 768px) {
+  .section-title {
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .section-description {
+    font-size: 1rem;
+    text-align: center;
+    margin-top: 1.5rem;
+  }
+
+  .jelajahi-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .jelajahi-desa-section .row {
+    display: flex;
+    align-items: center;
+  }
+
+  .text-section {
+    text-align: center;
+    margin-bottom: 1rem;
+  }
+
+  .jelajahi-card {
+    width: 100%; /* Adjust for smaller screens */
+    height: 100%;
+  }
+
+  .card-icon {
+    font-size: 3rem;
+  }
+
+  .jelajahi-card h5 {
+    font-size: 1rem;
+  }
+}

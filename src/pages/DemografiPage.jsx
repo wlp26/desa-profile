@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Navbar from "../components/Navbar";
 import Demografi from "../components/Demografi";
 import InfografisPertama from "../components/InfografisPertama";
@@ -11,6 +11,9 @@ import GolonganDarahInfografis from "../components/GolonganDarahInfografis";
 import PekerjaanCardSection from "../components/PekerjaanCardSection";
 
 const DemografiPage = () => {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   return (
     <>
       <Navbar />

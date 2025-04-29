@@ -10,15 +10,15 @@ const scrollToMaps = () => {
   window.scrollTo({ behavior: "smooth", top: mapsSection.offsetTop - offset });
 };
 
-const scrollToGallery = () => {
-  const isMobile = window.innerWidth <= 768;
-  const offset = isMobile ? 50 : 100;
-  const gallerySection = document.getElementById("gallery-section");
-  window.scrollTo({
-    behavior: "smooth",
-    top: gallerySection.offsetTop - offset,
-  });
-};
+// const scrollToGallery = () => {
+//   const isMobile = window.innerWidth <= 768;
+//   const offset = isMobile ? 50 : 100;
+//   const gallerySection = document.getElementById("gallery-section");
+//   window.scrollTo({
+//     behavior: "smooth",
+//     top: gallerySection.offsetTop - offset,
+//   });
+// };
 
 const Hero = () => {
   // Inisialisasi efek typewriter
@@ -52,9 +52,9 @@ const Hero = () => {
           >
             Kunjungi
           </button>
-          <button className="btn btn-light px-4 py-2" onClick={scrollToGallery}>
+          {/* <button className="btn btn-light px-4 py-2" onClick={scrollToGallery}>
             Gallery
-          </button>
+          </button> */}
         </div>
       </div>
     </div>

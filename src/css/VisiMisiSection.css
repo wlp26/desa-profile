@@ -1,53 +1,69 @@
-.visi-misi-section {
+.visi-misi-section-visi {
   background-color: #f1f5f9;
   padding-top: 10rem;
 }
-
-.card {
-  border-radius: 15px;
-  border: none;
-  background: #ffffff;
-  box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+.card-visi {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  height: 100%;
 }
 
-.card-title {
+.card-body-visi {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Pastikan konten dimulai dari atas */
+  align-items: flex-start; /* Pastikan konten dimulai dari kiri */
+  text-align: left; /* Mengatur teks ke kiri */
+  padding: 1rem; /* Pastikan ada ruang di dalam card */
+}
+
+.card-text-visi {
+  font-size: 1.1rem;
+  color: #6c757d;
+  line-height: 1.6;
+  text-align: left; /* Pastikan teks berada di kiri */
+  justify-content: flex-start; /* Menghindari konten terpusat */
+  margin: 0; /* Pastikan margin tidak menyebabkan offset */
+  padding-left: 0; /* Menghindari padding kiri tak diinginkan */
+}
+
+.d-flex-visi {
+  justify-content: flex-start;
+  text-align: left; /* Pastikan teks berada di kiri */
+  width: 100%; /* Pastikan elemen mengisi penuh */
+}
+
+.card-title-visi {
+  align-items: center;
+  text-align: center;
   font-size: 1.8rem;
   font-weight: 600;
   letter-spacing: 1px;
 }
 
-.card-text {
-  font-size: 1.1rem;
-  color: #6c757d;
-  line-height: 1.6;
-  text-align: justify;
-}
-
-.d-flex {
-  justify-content: flex-start;
-}
-.icon-spacing {
+.icon-spacing-visi {
   margin-right: 10px;
 }
 
 @media (max-width: 768px) {
-  .visi-misi-section {
+  .visi-misi-section-visi {
     padding-top: 7rem;
   }
 
-  .card-title {
+  .card-title-visi {
     font-size: 1.6rem;
   }
 
-  .card-text {
+  .card-text-visi {
     font-size: 1rem;
   }
 }
 
-.text-primary {
+.text-primary-visi {
   color: #007bff !important;
 }
 
-.text-success {
+.text-success-visi {
   color: #28a745 !important;
 }

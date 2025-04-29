@@ -62,7 +62,7 @@ const Maps = () => {
           <div className="peta-map">
             <iframe
               title="Peta Lokasi"
-              src="https://www.google.com/maps?q=-7.313856,112.746387&z=15&output=embed"
+              src="https://www.google.com/maps?q=1.4314224,124.7381662&z=15&output=embed"
               allowFullScreen
               loading="lazy"
             ></iframe>
