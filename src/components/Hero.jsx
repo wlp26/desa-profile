@@ -22,11 +22,11 @@ const scrollToMaps = () => {
 
 const Hero = () => {
   const [text] = useTypewriter({
-    words: ["Selamat Datang di Desa Tateli Weru", "Silahkan Melihat-lihat"], // Teks untuk typewriter
-    loop: 0, // Loop 0 untuk hanya sekali
-    typeSpeed: 150, // Kecepatan ketikan
-    deleteSpeed: 50, // Kecepatan penghapusan
-    delaySpeed: 1000, // Delay antar kata
+    words: ["Selamat Datang di Desa Tateli Weru", "Silahkan Melihat-lihat"],
+    loop: 0,
+    typeSpeed: 150,
+    deleteSpeed: 50,
+    delaySpeed: 1000,
   });
 
   return (
