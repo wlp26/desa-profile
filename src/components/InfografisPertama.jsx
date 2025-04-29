@@ -7,7 +7,8 @@ const Infografis = () => {
       <div className="container text-center">
         <h2 className="chart-title">Administrasi Desa</h2>
         <p className="section-subtitle">
-          Data statistik terbaru wilayah Kabupaten Minahasa, Sulawesi Utara.
+          Data statistik terbaru Desa Tateli Weru, Kabupaten Minahasa, Sulawesi
+          Utara.
         </p>
 
         <div className="infografis-flex-wrapper">

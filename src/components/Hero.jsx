@@ -1,7 +1,7 @@
 import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter"; // Import Typewriter effect
 import "../css/Hero.css";
-import background from "../assets/background-web.mp4";
+// import background from "../assets/background-web.mp4";
 
 const scrollToMaps = () => {
   const isMobile = window.innerWidth <= 768;
@@ -32,9 +32,10 @@ const Hero = () => {
 
   return (
     <div className="hero-container">
-      <video className="bg-video" autoPlay loop muted>
+      {/* <video className="bg-video" autoPlay loop muted>
         <source src={background} type="video/mp4" />
-      </video>
+      </video> */}
+      <div className="bg-image"></div>
       <div className="overlay"></div>
       <div className="hero-content text-white text-center">
         <h1 className="display-4 fw-bold">
