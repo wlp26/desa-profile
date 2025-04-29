@@ -1,7 +1,7 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
 import { FaPhone, FaEnvelope } from "react-icons/fa";
-import "../css/Footer.css";
+import "../css/FooterSection.css";
 
 const Footer = () => {
   return (
