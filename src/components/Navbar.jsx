@@ -15,6 +15,7 @@ const Navbar = () => {
     return () => window.removeEventListener("scroll", handleScroll);
   }, []);
 
+  const isGalleryActive = location.pathname === "/gallery";
   return (
     <nav
       className={`navbar navbar-expand-lg fixed-top px-5 ${
@@ -22,7 +23,7 @@ const Navbar = () => {
       }`}
     >
       <a className="navbar-brand fw-bold" href="#">
-        Tateli Weru
+        {isGalleryActive ? "Gallery" : "Tateli Weru"}
       </a>
 
       {/* 🔥 Tambahkan tombol hamburger */}
