@@ -53,12 +53,14 @@ const JelajahiDesaSection = () => {
                 </Link>
               </Col>
               <Col xs={6} sm={6} md={6}>
-                <Card className="jelajahi-card">
-                  <Card.Body className="text-center">
-                    <FaNewspaper size={50} className="card-icon" />
-                    <h5>BERITA</h5>
-                  </Card.Body>
-                </Card>
+                <Link to="/berita" className="text-decoration-none">
+                  <Card className="jelajahi-card">
+                    <Card.Body className="text-center">
+                      <FaNewspaper size={50} className="card-icon" />
+                      <h5>BERITA</h5>
+                    </Card.Body>
+                  </Card>
+                </Link>
               </Col>
               <Col xs={6} sm={6} md={6}>
                 <Link to="/gallery" className="text-decoration-none">

@@ -1,0 +1,21 @@
+.village-chart {
+  text-align: center;
+  background-color: #f1f5f9;
+}
+
+.section-title {
+  font-size: 28px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.chart-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.chart-image {
+  max-width: 100%;
+  height: auto;
+}

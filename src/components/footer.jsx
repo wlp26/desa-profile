@@ -9,7 +9,7 @@ const Footer = () => {
       <Container>
         <Row className="footer-content">
           <Col xs={12} md={4} className="footer-column">
-            <h5>Desa Tatelu Weru</h5>
+            <h5>Desa Tateli Weru</h5>
             <p>Kecamatan Mandolang</p>
             <p>Kabupaten Minahasa</p>
             <p>Provinsi Sulawesi Utara, 95661</p>

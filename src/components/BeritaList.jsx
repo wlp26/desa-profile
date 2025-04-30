@@ -24,7 +24,7 @@ const beritaData = [
     image: berita1,
     title: "Pantai Buloh",
     description:
-      "Sambang di desa Tateli Weru bersama anak - Anak Remaja di Pantai Buloh",
+      "Sambang di desa Tateli Weru bersama anak - anak Remaja di Pantai Buloh",
   },
   {
     id: 2,
