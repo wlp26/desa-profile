@@ -1,0 +1,65 @@
+/* CardBerita.css */
+.card-berita {
+  width: 300px;
+  max-width: 300px;
+  background-color: white;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+  cursor: pointer;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+}
+
+.card-content {
+  padding: 12px;
+}
+
+.card-title {
+  font-size: 18px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.card-description {
+  font-size: 14px;
+  color: #555;
+  margin-top: 8px;
+  max-height: 100px;
+  overflow-y: auto;
+  padding-right: 8px;
+}
+
+/* BeritaList.css */
+.berita-list {
+  display: grid;
+  row-gap: 25px;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+}
+.berita-container {
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.berita-section {
+  padding-top: 70px;
+}
+@media (max-width: 768px) {
+  .berita-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Menyusun item secara horizontal di tengah */
+    justify-content: center; /* Menyusun item secara vertikal di tengah */
+  }
+}

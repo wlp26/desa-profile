@@ -1,10 +1,15 @@
-import React from "react";
-import { Swiper, SwiperSlide } from "swiper/react";
-import { EffectCoverflow, Autoplay } from "swiper/modules";
-import "swiper/css";
-import "swiper/css/effect-coverflow";
-import "../css/GalleryCarousel.css";
+import * as React from "react";
+import Box from "@mui/material/Box";
+import ImageList from "@mui/material/ImageList";
+import ImageListItem from "@mui/material/ImageListItem";
+import Dialog from "@mui/material/Dialog";
+import DialogActions from "@mui/material/DialogActions";
+import DialogContent from "@mui/material/DialogContent";
+import DialogTitle from "@mui/material/DialogTitle";
+import Button from "@mui/material/Button";
+import "../css/GallerySection.css";
 
+// Import images
 import tateli1 from "../assets/tateli1.jpg";
 import tateli2 from "../assets/tateli2.jpg";
 import tateli3 from "../assets/tateli3.jpg";
@@ -53,46 +58,21 @@ import tateli45 from "../assets/tateli45.jpg";
 import tateli46 from "../assets/tateli46.jpg";
 import tateli47 from "../assets/tateli47.jpg";
 
-const dataImages = [
-  {
-    src: tateli1,
-  },
-  {
-    src: tateli2,
-  },
-  {
-    src: tateli3,
-  },
-  {
-    src: tateli4,
-  },
-  {
-    src: tateli5,
-  },
-  {
-    src: tateli6,
-  },
-  {
-    src: tateli7,
-  },
-  {
-    src: tateli8,
-  },
-  {
-    src: tateli9,
-  },
-  {
-    src: tateli10,
-  },
-  {
-    src: tateli11,
-  },
-  {
-    src: tateli12,
-  },
-  {
-    src: tateli13,
-  },
+// Array of images
+const imageData = [
+  { src: tateli1 },
+  { src: tateli2 },
+  { src: tateli3 },
+  { src: tateli4 },
+  { src: tateli5 },
+  { src: tateli6 },
+  { src: tateli7 },
+  { src: tateli8 },
+  { src: tateli9 },
+  { src: tateli10 },
+  { src: tateli11 },
+  { src: tateli12 },
+  { src: tateli13 },
   { src: tateli14 },
   { src: tateli15 },
   { src: tateli16 },
@@ -129,48 +109,62 @@ const dataImages = [
   { src: tateli47 },
 ];
 
-const GalleryCarousel = () => {
-  return (
-    <section id="gallery-section" className="gallery-section">
-      <div className="custom-container text-center">
-        <h2 className="chart-title">Galeri Desa</h2>
-        <p className="gallery-subtitle">
-          Potret keindahan alam dan aktivitas desa kami.
-        </p>
+const ImageSection = () => {
+  const [open, setOpen] = React.useState(false); // Dialog open state
+  const [selectedImage, setSelectedImage] = React.useState(""); // Image to display in the Dialog
 
-        <Swiper
-          effect={"coverflow"}
-          grabCursor={true}
-          centeredSlides={true}
-          slidesPerView={"auto"}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          coverflowEffect={{
-            rotate: 0,
-            stretch: 0,
-            depth: 150,
-            modifier: 2,
-            slideShadows: true,
-          }}
-          modules={[EffectCoverflow, Autoplay]}
-          className="gallery-swiper"
-        >
-          {dataImages.map((item, index) => (
-            <SwiperSlide key={index} className="gallery-slide">
-              <img src={item.src} alt={item.title} />
-              <div className="slide-overlay">
-                <h3>{item.title}</h3>
-                <p>{item.description}</p>
-              </div>
-            </SwiperSlide>
+  // Open the dialog with the selected image
+  const handleClickOpen = (src) => {
+    setSelectedImage(src);
+    setOpen(true);
+  };
+
+  // Close the dialog
+  const handleClose = () => {
+    setOpen(false);
+  };
+
+  return (
+    <section className="image-section py-5">
+      <Box sx={{ padding: "30px" }}>
+        <ImageList variant="masonry" cols={3} gap={8}>
+          {imageData.map((item, index) => (
+            <ImageListItem
+              key={index}
+              onClick={() => handleClickOpen(item.src)}
+            >
+              <img
+                srcSet={`${item.src}?w=248&fit=crop&auto=format&dpr=2 2x`}
+                src={`${item.src}?w=248&fit=crop&auto=format`}
+                loading="lazy"
+                alt="Gallery"
+              />
+            </ImageListItem>
           ))}
-        </Swiper>
-      </div>
+        </ImageList>
+      </Box>
+
+      <Dialog open={open} onClose={handleClose}>
+        <DialogContent>
+          <img
+            src={selectedImage}
+            alt="Selected"
+            style={{ width: "100%", height: "100%", borderRadius: "8px" }}
+          />
+        </DialogContent>
+        <DialogActions
+        //   style={{
+        //     display: "flex",
+        //     justifyContent: "center",
+        //   }}
+        >
+          <Button onClick={handleClose} color="primary">
+            Tutup
+          </Button>
+        </DialogActions>
+      </Dialog>
     </section>
   );
 };
 
-export default GalleryCarousel;
+export default ImageSection;

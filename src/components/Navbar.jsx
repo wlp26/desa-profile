@@ -22,7 +22,7 @@ const Navbar = () => {
       }`}
     >
       <a className="navbar-brand fw-bold" href="#">
-        Profile Desa
+        Tateli Weru
       </a>
 
       {/* 🔥 Tambahkan tombol hamburger */}
@@ -72,6 +72,26 @@ const Navbar = () => {
               }
             >
               Infografis
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/berita"
+              className={({ isActive }) =>
+                "nav-link" + (isActive ? " active" : "")
+              }
+            >
+              Berita
+            </NavLink>
+          </li>
+          <li className="nav-item">
+            <NavLink
+              to="/gallery"
+              className={({ isActive }) =>
+                "nav-link" + (isActive ? " active" : "")
+              }
+            >
+              Galeri
             </NavLink>
           </li>
         </ul>
